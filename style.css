@@ -1,67 +1,247 @@
-section {
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://media0.giphy.com/media/l1J9PbDIgHvgeVry0/giphy.gif?cid=ecf05e47t4higji6j7ukzoo45448zfj08cwpwq8wb8f11fo0&rid=giphy.gif&ct=g');
+    background-position: center;
+}
+
+header {
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-  }
-  div {
-    background-color: orange;
-    margin: 4px;
-    padding: 4px;
-    border: 2px white;
-    color: white;
-    flex: 1;
-  }
-  div.flex-container {
-      display: flex;
-  }
-  div.side-align {
-    flex: 1;
-    border-right: 2px solid yellow;
-    background-color: black;
-  }
-  div.right-align{
-     margin-right: 0px;
-     background-color: black;
-     text-align: center;
-     border-left: 2px solid yellow;
-  }
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%;
-  }
-  p.center-aligned {
-    text-align: center;
-  }
-  body {
-    background-color: black;
-  }
-  p {
-    color: white;
-    font-family: verdana;
-  }
-  p.big-size{
-    font-size: 20px;
-  }
-  
-  h1{
-    color: yellow;
-    font-size: 36px;
-  }
-  h2{
-    color: yellow;
-    font-size: 36px;
-  }
-  p.small-size-color{
-    color: purple;
-    font-size: 14px;
-    padding:1px;
-    text-align: center;
-  }
-  a {
-    color: white;
+    justify-content: space-between;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
     text-decoration: none;
-    background-color: brown;
-  }
-  p.colored{
-    color: black;
-  }
+    font-size: 24px;
+}
+
+main {
+    margin: 20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h1,
+h3 {
+    margin: 0;
+    color: maroon;
+}
+
+h2 {
+    color: purple;
+    margin: 0px;
+}
+
+.project {
+    margin: 20px 0;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+
+.about {
+    color: white;
+    font-size: 40px;
+}
+
+.degisnation {
+    color: white;
+    padding: 0px;
+    margin: 0px;
+}
+
+#date {
+    color: white;
+    font-size: 10px;
+}
+
+#body {
+    color: white;
+    font-size: 14px;
+}
+
+.progress-bars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.progress-bar-label {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: orange;
+}
+
+.progress-bar-percent {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.progress-bar-fill {
+    width: 300px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #eee;
+    position: relative;
+}
+
+.progress-bar-fill:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #007bff;
+    border-radius: 15px;
+    transition: width 0.5s ease;
+}
+
+.java:before {
+    width: 80%;
+}
+
+.javascript:before {
+    width: 80%;
+}
+
+.react:before {
+    width: 88%;
+}
+
+.node:before {
+    width: 70%;
+}
+
+.aws:before {
+    width: 75%;
+}
+
+.python:before {
+    width: 100%;
+}
+
+.cplusplus:before {
+    width: 100%;
+}
+
+.html:before {
+    width: 100%;
+}
+
+.css:before {
+    width: 100%;
+}
+
+.git:before {
+    width: 100%;
+}
+
+.intellij:before {
+    width: 100%;
+}
+
+.typescript:before {
+    width: 75%;
+}
+
+.sql:before {
+    width: 90%;
+}
+
+.vs:before {
+    width: 95%;
+}
+
+.lnx:before {
+    width: 92%;
+}
+
+.asm:before {
+    width: 92%;
+}
+
+.asm:before {
+    width: 65%;
+}
+
+.ang:before {
+    width: 75%;
+}
+
+.dtaalg:before {
+    width: 100%;
+}
+
+#proj {
+    color: orange;
+    font-size: 30px;
+}
+
+#description {
+    color: white;
+    font-size: 16px;
+}
